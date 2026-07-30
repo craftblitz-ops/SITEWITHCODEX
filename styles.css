@@ -6,7 +6,7 @@
   --white: #FFFFFF;
   --line: #E7DDB8;
   --primary: #0B5B52;
-  --primary-dark: #08463F;
+  --primary-dark: #1f1f1f;
   --card: #FFFDF6;
   --section: #FFF6D8;
   --shadow: 0 10px 30px rgba(1, 62, 55, 0.10);
@@ -155,17 +155,19 @@ h3 {
 }
 
 .btn:hover {
-  background: var(--primary);
-  transform: translateY(+1px);
+  background: var(--primary-dark);
+  color: var(--white);
+  transform: translateY(1px);
 }
 
 .btn-secondary {
-  background: var(--accent-soft);
-  color: var(--primary);
+  background: var(--primary-dark);
+  color: var(--white);
 }
 
 .btn-secondary:hover {
-  background: var(--accent-soft-hover);
+  background: var(--primary-dark);
+  color: var(--white);
 }
 
 .btn-light {
