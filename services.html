@@ -3,248 +3,223 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services Offered</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f9fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 18px 40px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #1d4ed8, #2563eb);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    .hero h1 {
-      margin: 0 0 12px;
-      font-size: 42px;
-    }
-
-    .hero p {
-      max-width: 760px;
-      margin: 0 auto;
-      font-size: 18px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 50px 20px 70px;
-    }
-
-    .service-section {
-      background: white;
-      border-radius: 16px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-    }
-
-    .service-section h2 {
-      margin-top: 0;
-      margin-bottom: 14px;
-      color: #1d4ed8;
-      font-size: 28px;
-    }
-
-    .service-section ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .service-section li {
-      margin-bottom: 8px;
-    }
-
-    .back-home {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .back-home a {
-      display: inline-block;
-      background: #1d4ed8;
-      color: white;
-      text-decoration: none;
-      padding: 12px 22px;
-      border-radius: 8px;
-      font-weight: 600;
-    }
-
-    footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+  <title>Services Offered | CA Services</title>
+  <meta
+    name="description"
+    content="Explore our full range of consultancy, finance, audit, accounting, taxation, compliance, valuation, and business advisory services."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services Offered</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">CA Services</a>
+
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <h1>Services Offered</h1>
-    <p>
-      We provide a wide range of professional services across consultancy, finance,
-      compliance, audit, accounting, taxation, and business support.
-    </p>
+    <div class="container">
+      <div class="section-label">What We Offer</div>
+      <h1>Services Offered</h1>
+      <p class="hero-text">
+        We offer a wide range of professional services across consultancy, finance,
+        compliance, valuation, restructuring, audit, accounting, and taxation.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#all-services" class="btn">Explore Services</a>
+        <a href="index.html#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
   </section>
 
-  <main class="container">
-    <section class="service-section">
-      <h2>Business Advisory & Consultancy</h2>
-      <ul>
-        <li>Management consultancy</li>
-        <li>Financial planning and policy review</li>
-        <li>Budgeting and budgetary control systems</li>
-        <li>Management information systems (MIS)</li>
-        <li>Working capital and capital utilisation advisory</li>
-        <li>Productivity and efficiency improvement</li>
-        <li>Business strategy, pricing, and product mix decisions</li>
-      </ul>
-    </section>
+  <section class="section" id="all-services">
+    <div class="container">
+      <div class="section-label">Core Services</div>
+      <h2>Professional support across every stage of business</h2>
+      <p class="section-intro">
+        From advisory and finance to compliance and assurance, our services are designed
+        to support businesses, promoters, management teams, and individuals with
+        practical and reliable guidance.
+      </p>
 
-    <section class="service-section">
-      <h2>Finance & Capital Market Support</h2>
-      <ul>
-        <li>Capital issue advisory</li>
-        <li>Prospectus and offer document support</li>
-        <li>Registrar and share transfer services</li>
-        <li>Investment advisory in securities</li>
-      </ul>
-    </section>
+      <div class="cards">
+        <article class="card">
+          <h3>Business Advisory & Consultancy</h3>
+          <ul class="check-list">
+            <li>Management consultancy</li>
+            <li>Financial planning and policy review</li>
+            <li>Budgeting and budgetary control systems</li>
+            <li>Management information systems (MIS)</li>
+            <li>Working capital and capital utilisation advisory</li>
+            <li>Productivity and efficiency improvement</li>
+            <li>Business strategy, pricing, and product mix decisions</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Costing & Profitability</h2>
-      <ul>
-        <li>Cost accounting systems</li>
-        <li>Cost control methods</li>
-        <li>Production and service cost analysis</li>
-        <li>Profitability improvement and pricing support</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Finance & Capital Market Support</h3>
+          <ul class="check-list">
+            <li>Capital issue advisory</li>
+            <li>Prospectus and offer document support</li>
+            <li>Registrar and share transfer services</li>
+            <li>Investment advisory in securities</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Company Law & Compliance</h2>
-      <ul>
-        <li>Company formation and registration</li>
-        <li>Corporate secretarial services</li>
-        <li>Corporate law advisory</li>
-        <li>Compliance support for private and limited companies</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Valuation & Due Diligence</h3>
+          <ul class="check-list">
+            <li>Share valuation</li>
+            <li>Business valuation</li>
+            <li>Financial due diligence</li>
+            <li>Investigation for mergers, acquisitions, and restructuring</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Valuation & Due Diligence</h2>
-      <ul>
-        <li>Share valuation</li>
-        <li>Business valuation</li>
-        <li>Financial due diligence</li>
-        <li>Investigation for mergers, acquisitions, and restructuring</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Company Law & Compliance</h3>
+          <ul class="check-list">
+            <li>Company formation and registration</li>
+            <li>Corporate secretarial services</li>
+            <li>Corporate law advisory</li>
+            <li>Compliance support for private and limited companies</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Mergers, Restructuring & Expansion</h2>
-      <ul>
-        <li>Amalgamations and reconstructions</li>
-        <li>Takeovers and acquisition support</li>
-        <li>Expansion planning</li>
-        <li>Feasibility studies for new projects</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Costing & Profitability</h3>
+          <ul class="check-list">
+            <li>Cost accounting systems</li>
+            <li>Cost control methods</li>
+            <li>Production and service cost analysis</li>
+            <li>Profitability improvement and pricing support</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Investigation & Special Assignments</h2>
-      <ul>
-        <li>Business investigations</li>
-        <li>Profit and performance analysis</li>
-        <li>Operational and administrative efficiency reviews</li>
-        <li>Special financial and compliance reviews</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Mergers, Restructuring & Expansion</h3>
+          <ul class="check-list">
+            <li>Amalgamations and reconstructions</li>
+            <li>Takeovers and acquisition support</li>
+            <li>Expansion planning</li>
+            <li>Feasibility studies for new projects</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Estate, Insolvency & Dispute Support</h2>
-      <ul>
-        <li>Executor and trustee services</li>
-        <li>Insolvency-related financial assistance</li>
-        <li>Bankruptcy and statement of affairs support</li>
-        <li>Arbitration and dispute resolution support</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Investigation & Special Assignments</h3>
+          <ul class="check-list">
+            <li>Business investigations</li>
+            <li>Profit and performance analysis</li>
+            <li>Operational and administrative efficiency reviews</li>
+            <li>Special financial and compliance reviews</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Audit & Assurance</h2>
-      <ul>
-        <li>Statutory audits</li>
-        <li>Internal audits</li>
-        <li>Tax audits</li>
-        <li>Financial statement review and assurance</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Estate, Insolvency & Dispute Support</h3>
+          <ul class="check-list">
+            <li>Executor and trustee services</li>
+            <li>Insolvency-related financial assistance</li>
+            <li>Bankruptcy and statement of affairs support</li>
+            <li>Arbitration and dispute resolution support</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Accounting & Bookkeeping</h2>
-      <ul>
-        <li>Bookkeeping and account writing</li>
-        <li>Preparation of financial statements</li>
-        <li>Financial analysis and reporting</li>
-        <li>Management accounting support</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Audit & Assurance</h3>
+          <ul class="check-list">
+            <li>Statutory audits</li>
+            <li>Internal audits</li>
+            <li>Tax audits</li>
+            <li>Financial statement review and assurance</li>
+          </ul>
+        </article>
 
-    <section class="service-section">
-      <h2>Taxation Services</h2>
-      <ul>
-        <li>Income tax return preparation and filing</li>
-        <li>Tax planning and advisory</li>
-        <li>Representation before tax authorities</li>
-        <li>Tax compliance and audit support</li>
-        <li>International taxation advisory</li>
-        <li>Advice on double taxation, foreign collaborations, and joint ventures</li>
-      </ul>
-    </section>
+        <article class="card">
+          <h3>Accounting & Bookkeeping</h3>
+          <ul class="check-list">
+            <li>Bookkeeping and account writing</li>
+            <li>Preparation of financial statements</li>
+            <li>Financial analysis and reporting</li>
+            <li>Management accounting support</li>
+          </ul>
+        </article>
 
-    <div class="back-home">
-      <a href="index.html">Back to Home</a>
+        <article class="card">
+          <h3>Taxation Services</h3>
+          <ul class="check-list">
+            <li>Income tax return preparation and filing</li>
+            <li>Tax planning and advisory</li>
+            <li>Representation before tax authorities</li>
+            <li>Tax compliance and audit support</li>
+            <li>International taxation advisory</li>
+            <li>Advice on double taxation, foreign collaborations, and joint ventures</li>
+          </ul>
+        </article>
+      </div>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <p>&copy; 2026 Your Firm Name. All rights reserved.</p>
+  <section class="section alt">
+    <div class="container split">
+      <div>
+        <div class="section-label">Why Choose Us</div>
+        <h2>Reliable guidance with practical business understanding</h2>
+        <p class="section-intro">
+          We combine technical knowledge with practical support so clients can make
+          better decisions, stay compliant, and move forward with confidence.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <ul class="check-list">
+          <li>Advisory-first approach</li>
+          <li>Support across business, finance, and compliance matters</li>
+          <li>Practical guidance for growth, restructuring, and control</li>
+          <li>End-to-end professional assistance under one roof</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container cta-box">
+      <div>
+        <div class="section-label light">Need Professional Support?</div>
+        <h2>Let’s discuss the right solution for your requirement.</h2>
+      </div>
+
+      <div class="hero-actions">
+        <a href="index.html#contact" class="btn btn-light">Contact Us</a>
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 CA Services. All rights reserved.</span>
+      <span>Professional. Practical. Reliable.</span>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
