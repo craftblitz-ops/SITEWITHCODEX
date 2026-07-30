@@ -353,5 +353,6 @@ h3 {
 }
 
 .review {
+  font-style: italic;
   margin-bottom: 0.5rem;
 }
