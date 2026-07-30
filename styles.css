@@ -11,6 +11,9 @@
   --section: #FFF6D8;
   --shadow: 0 10px 30px rgba(1, 62, 55, 0.10);
   --radius: 18px;
+  --accent-soft: #E4F1EE;
+  --accent-soft-hover: #D5E9E4;
+  --gold: #B8891E;
 }
 
 * {
@@ -25,7 +28,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   color: var(--text);
-  background: var(--white);
+  background: var(--bg);
   line-height: 1.6;
 }
 
@@ -48,9 +51,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255, 249, 229, 0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(1, 62, 55, 0.08);
 }
 
 .nav {
@@ -63,7 +66,7 @@ img {
 .logo {
   font-weight: 800;
   font-size: 1.2rem;
-  color: var(--bg);
+  color: var(--text);
 }
 
 .nav-links {
@@ -73,7 +76,7 @@ img {
 }
 
 .nav-links a {
-  color: #374151;
+  color: var(--text);
   font-weight: 500;
 }
 
@@ -83,6 +86,7 @@ img {
   border: none;
   font-size: 1.6rem;
   cursor: pointer;
+  color: var(--text);
 }
 
 .hero {
@@ -143,7 +147,7 @@ h3 {
   align-items: center;
   justify-content: center;
   background: var(--primary);
-  color: white;
+  color: var(--white);
   padding: 14px 22px;
   border-radius: 999px;
   font-weight: 700;
@@ -156,17 +160,17 @@ h3 {
 }
 
 .btn-secondary {
-  background: #e8eefc;
+  background: var(--accent-soft);
   color: var(--primary);
 }
 
 .btn-secondary:hover {
-  background: #dce7ff;
+  background: var(--accent-soft-hover);
 }
 
 .btn-light {
-  background: white;
-  color: var(--bg);
+  background: var(--white);
+  color: var(--primary);
 }
 
 .btn-sm {
@@ -234,8 +238,8 @@ h3 {
 }
 
 .cta {
-  background: linear-gradient(135deg, #0f172a, #1d4ed8);
-  color: white;
+  background: linear-gradient(135deg, #013E37, #0B5B52);
+  color: var(--white);
 }
 
 .cta-box {
@@ -246,7 +250,7 @@ h3 {
 }
 
 .light {
-  color: #bfdbfe;
+  color: var(--bg-soft);
 }
 
 .contact-grid {
@@ -262,8 +266,8 @@ h3 {
 }
 
 .site-footer {
-  background: #0f172a;
-  color: #cbd5e1;
+  background: #013E37;
+  color: #DCEBE8;
   padding: 22px 0;
 }
 
@@ -298,7 +302,7 @@ h3 {
     position: absolute;
     top: 74px;
     right: 16px;
-    background: white;
+    background: var(--card);
     border: 1px solid var(--line);
     border-radius: 16px;
     box-shadow: var(--shadow);
@@ -338,15 +342,16 @@ h3 {
 .whatsapp-float:hover {
   background: #1ebe5d;
 }
+
 .testimonialsnote {
-  color: #888;
+  color: var(--muted);
   font-size: 0.8rem;
   font-style: normal;
   margin: 0.5rem 0 1rem;
 }
 
 .role {
-  color: #888;
+  color: var(--muted);
   font-size: 0.8rem;
   font-style: normal;
   margin-top: 0.25rem;
@@ -358,7 +363,7 @@ h3 {
 }
 
 .testimonial-stars {
-  color: #f5b301;
+  color: var(--gold);
   font-size: 1.2rem;
   letter-spacing: 3px;
   margin-bottom: 10px;
