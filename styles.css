@@ -376,3 +376,24 @@ h3 {
   font-size: 1rem;
   line-height: 1.6;
 }
+
+.more-services-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.more-services-link a {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  transition: 0.2s ease;
+}
+
+.more-services-link a:hover {
+  background: var(--accent-soft-hover);
+  transform: translateY(1px);
+}
