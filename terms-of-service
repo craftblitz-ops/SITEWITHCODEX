@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service | R. Agrawal & Co.</title>
+  <meta name="description" content="Terms of Service for R. Agrawal & Co., Chartered Accountants." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">R. Agrawal & Co</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#about">Why Us?</a>
+        <a href="index.html#contact" class="btn" style="color: #fff9e5;">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Legal</p>
+        <h1>Terms of Service</h1>
+        <p class="section-intro">
+          Last updated: [Add date]. Please read these terms before using this website or engaging R. Agrawal & Co.
+          ("we", "us", "our firm") for professional services.
+        </p>
+
+        <h2>About this website</h2>
+        <p>
+          This website is provided for general information about our firm and the services we offer. It does not
+          constitute professional advice, and no client relationship is formed simply by browsing this site,
+          submitting an enquiry form, or contacting us via email, phone, or WhatsApp.
+        </p>
+
+        <h2>Engagement of services</h2>
+        <p>
+          A formal client-professional relationship begins only once we have discussed your requirements and both
+          parties have agreed on the scope of work, fees, and terms of engagement, typically confirmed in writing
+          or via a formal engagement letter.
+        </p>
+
+        <h2>No solicitation</h2>
+        <p>
+          As per the guidelines issued by the Institute of Chartered Accountants of India (ICAI), nothing on this
+          website is intended as a solicitation of professional work. Information is shared purely to help
+          prospective clients understand the services we offer.
+        </p>
+
+        <h2>Accuracy of information</h2>
+        <p>
+          We aim to keep this website accurate and up to date, but tax laws, GST regulations, and compliance
+          requirements change frequently. Content on this site should not be relied upon as a substitute for
+          personalised professional advice specific to your situation.
+        </p>
+
+        <h2>Limitation of liability</h2>
+        <p>
+          We are not liable for any loss or damage arising from reliance on general information published on this
+          website. Specific advice, computations, and filings undertaken as part of a formal engagement are
+          governed separately by the terms of that engagement.
+        </p>
+
+        <h2>Fees and free review offer</h2>
+        <p>
+          Any promotional offers mentioned on this site (such as a complimentary review) are subject to change and
+          apply only under the conditions stated at the time of the offer. Fees for ongoing services will be
+          communicated and agreed upon before work begins.
+        </p>
+
+        <h2>Governing law</h2>
+        <p>
+          These terms are governed by the laws of India, and any disputes shall be subject to the jurisdiction of
+          the courts at Raipur, Chhattisgarh.
+        </p>
+
+        <h2>Contact us</h2>
+        <p>
+          For any questions about these terms, write to
+          <a href="mailto:businessrahul.1191@gmail.com">businessrahul.1191@gmail.com</a>
+          or call
+          <a href="tel:+919232111200">+91 9232 111 200</a>.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>R. Agrawal & Co.</h4>
+          <p>Chartered Accountants.</p>
+          <p>Floor 1: 46/39<br>
+Geeta Nagar<br>
+Raipur (CG), 492001</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#about">Why Us?</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <a href="mailto:businessrahul.1191@gmail.com">Email Us</a>
+          <a href="tel:+919232111200">Call Us</a>
+          <a href="https://wa.me/919232111200?text=Hi%20I%20visited%20your%20website%20and%20want%20to%20know%20more." target="_blank">WhatsApp</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Credentials</h4>
+          <p>CA Rahul Agrawal</p>
+          <p>ICAI Membership No.: </p>
+          <p>Firm Registration No.:</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> R. Agrawal & Associates. All rights reserved.</span>
+        <div class="legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <p class="footer-disclaimer">
+        As per the guidelines of the Institute of Chartered Accountants of India (ICAI), this website is intended for informational purposes only and should not be construed as a solicitation of professional work or advertisement.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
