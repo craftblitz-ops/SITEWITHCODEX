@@ -93,7 +93,7 @@ img {
   background:
     radial-gradient(circle at top left, rgba(1, 62, 55, 0.08), transparent 34%),
     linear-gradient(180deg, #FFF9E5 0%, #FFFFFF 100%);
-  padding-top: 40px;
+  padding-top: 32px;
   padding-bottom: 80px;
 }
 
