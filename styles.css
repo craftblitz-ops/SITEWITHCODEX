@@ -397,3 +397,12 @@ h3 {
   background: var(--accent-soft-hover);
   transform: translateY(1px);
 }
+
+.small-s {
+  font-size: 0.75em;
+}
+
+sup {
+  font-size: 0.6em;
+  vertical-align: super;
+}
