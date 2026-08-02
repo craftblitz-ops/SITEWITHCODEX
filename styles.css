@@ -14,6 +14,19 @@
   --accent-soft: #E4F1EE;
   --accent-soft-hover: #D5E9E4;
   --gold: #B8891E;
+
+  /* Spacing scale — 8px base grid, ~1.5x steps.
+     Every padding/gap/margin below pulls from this list instead of
+     one-off numbers, so spacing feels intentional instead of arbitrary. */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 80px;
+  --space-9: 96px;
 }
 
 * {
@@ -93,14 +106,14 @@ img {
   background:
     radial-gradient(circle at top left, rgba(1, 62, 55, 0.08), transparent 34%),
     linear-gradient(180deg, #FFF9E5 0%, #FFFFFF 100%);
-  padding-top: 32px;
-  padding-bottom: 80px;
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-8);
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 36px;
+  gap: var(--space-4);
   align-items: center;
 }
 
@@ -111,19 +124,19 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.82rem;
-  margin-bottom: 10px;
+  margin-bottom: var(--space-1);
 }
 
 h1 {
   font-size: clamp(2.2rem, 5vw, 4.2rem);
   line-height: 1.08;
-  margin: 0 0 16px;
+  margin: 0 0 var(--space-2);
 }
 
 h2 {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   line-height: 1.15;
-  margin: 0 0 14px;
+  margin: 0 0 var(--space-2);
 }
 
 h3 {
@@ -138,9 +151,24 @@ h3 {
 
 .hero-actions {
   display: flex;
-  gap: 14px;
-  margin-top: 28px;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
   flex-wrap: wrap;
+}
+
+.trust-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.trust-line .stars {
+  color: var(--gold);
+  letter-spacing: 2px;
 }
 
 .btn {
@@ -149,7 +177,7 @@ h3 {
   justify-content: center;
   background: var(--primary);
   color: var(--white);
-  padding: 14px 22px;
+  padding: var(--space-2) var(--space-3);
   border-radius: 999px;
   font-weight: 700;
   transition: 0.2s ease;
@@ -190,11 +218,11 @@ h3 {
 }
 
 .hero-card {
-  padding: 20px;
+  padding: var(--space-3);
 }
 
 .stat {
-  padding: 18px;
+  padding: var(--space-2);
   border-bottom: 1px solid var(--line);
 }
 
@@ -203,7 +231,7 @@ h3 {
 }
 
 .section {
-  padding: 84px 0;
+  padding: var(--space-8) 0;
 }
 
 .alt {
@@ -213,23 +241,23 @@ h3 {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 28px;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
 }
 
 .card {
-  padding: 24px;
+  padding: var(--space-3);
 }
 
 .split {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 28px;
+  gap: var(--space-3);
   align-items: center;
 }
 
 .about-box {
-  padding: 28px;
+  padding: var(--space-3);
 }
 
 .check-list {
@@ -249,7 +277,22 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: var(--space-2);
+}
+
+.cta-trust {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+  color: var(--bg-soft);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cta-trust .stars {
+  color: var(--gold);
+  letter-spacing: 2px;
 }
 
 .light {
@@ -259,8 +302,8 @@ h3 {
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 28px;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
 }
 
 .contact-grid a {
@@ -271,14 +314,125 @@ h3 {
 .site-footer {
   background: #013E37;
   color: #DCEBE8;
-  padding: 22px 0;
+  padding: var(--space-6) 0 var(--space-3);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+  gap: var(--space-4);
+  padding-bottom: var(--space-3);
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 var(--space-2);
+}
+
+.footer-col p {
+  margin: 0 0 var(--space-1);
+  font-size: 0.85rem;
+  color: #B9D2CC;
+  line-height: 1.5;
+}
+
+.footer-col a {
+  display: block;
+  color: #DCEBE8;
+  font-size: 0.9rem;
+  margin-bottom: var(--space-1);
+  opacity: 0.9;
+}
+
+.footer-col a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.legal-page h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.legal-page .section-intro {
+  max-width: 760px;
+}
+
+.legal-page h2 {
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  margin-top: var(--space-4);
+}
+
+.legal-page p,
+.legal-page li {
+  color: var(--muted);
+  max-width: 760px;
+}
+
+.legal-page ul {
+  padding-left: 18px;
+}
+
+.footer-disclaimer {
+  margin-top: var(--space-2);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #7FA69F;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: var(--space-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  font-size: 0.8rem;
+  color: #9FC0BA;
+}
+
+.footer-bottom .legal-links {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.footer-bottom .legal-links a {
+  color: #9FC0BA;
+  font-size: 0.8rem;
+}
+
+.footer-bottom .legal-links a:hover {
+  color: #DCEBE8;
+  text-decoration: underline;
 }
 
 .footer-row {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: var(--space-1);
   flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 900px) {
@@ -325,14 +479,19 @@ h3 {
   }
 
   .section {
-    padding: 64px 0;
+    padding: var(--space-7) 0;
+  }
+
+  .hero {
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-6);
   }
 }
 
 .whatsapp-float {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: var(--space-2);
+  bottom: var(--space-2);
   background: #25D366;
   color: white;
   padding: 14px 18px;
@@ -380,7 +539,7 @@ h3 {
 
 .more-services-link {
   text-align: center;
-  margin-top: 20px;
+  margin-top: var(--space-2);
 }
 
 .more-services-link a {
@@ -411,7 +570,7 @@ sup {
 .top-strip {
     background: #013E37;
     color: #FFF9E5;
-    padding: 10px 0;
+    padding: var(--space-1) 0;
     text-align: center;
     border-bottom: 1px solid rgba(255, 249, 229, 0.12);
 }
