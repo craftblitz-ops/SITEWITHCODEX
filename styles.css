@@ -410,7 +410,7 @@ sup {
 .top-strip {
     background: #013E37;
     color: #FFF9E5;
-    padding: 0px 0;
+    padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid rgba(255, 249, 229, 0.12);
 }
